@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="robots" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="W3crm:Customer Relationship Management Admin Bootstrap 5 Template">
+    <meta property="og:title" content="W3crm:Customer Relationship Management Admin Bootstrap 5 Template">
+    <meta property="og:description" content="W3crm:Customer Relationship Management Admin Bootstrap 5 Template">
+    <meta name="format-detection" content="telephone=no">
+    <!-- PAGE TITLE HERE -->
+    <title>Hernandito Publicidad</title>
+    <link href="vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/master.css">
+</head>
+{{> header}}
+<body>
+    <div class="login-box">
+        <img src='https://i.ibb.co/gZXv5Yh/image.png' class="avatar" alt="Avatar Image">
+        <h1>Bienvenido al inicio de Sesion</h1>
+        <h3>Hernandito Publicidad</h3>
+        <form action="/login" method="POST">  
+            <!-- TYPE USER INPUT -->
+            <label for="tipo_usuario">Tipo de Usuario</label>
+            <select name="tipo_usuario" class="form-control" value="Selecciona">
+                <option value="selecciona">Selecciona</option>
+                <option value="administrador">Administracion</option>
+                <option value="gerente">Gerente</option>
+                <option value="vendedor">Vendedor</option>
+                <option value="cajero">Cajero</option>
+                <option value="auxiliar">Auxiliar</option>
+                <option value="cliente">Cliente</option>
+            </select>
+            <!-- USERNAME INPUT -->
+            <label for="cedula">Cedula</label>
+            <input type="text" name="cedula" placeholder="Digité su numero de Identidad" required>
+            <!-- PASSWORD INPUT -->
+            <label for="contrasena">Contraseña</label>
+            <input type="contrasena" name="contrasena" placeholder="Digité su Contraseña" required>
+            <input type="submit" value="Ingresar">
+        </form>
+        <a href="/registro">¿No tiene una cuenta?</a>
+    </div>
+</body>
+</html>
